@@ -416,12 +416,12 @@ input , textarea{
 }
 .inputnameemail input{
     max-width: 180px;
-    width: 140px;
+    width: 145px;
     
 }
 .inputsubject input , .inputmessage textarea{
     max-width: 370px;
-    width: 290px;
+    width: 300px;
 }
 input , textarea{
     padding: 7px 10px;
@@ -432,5 +432,8 @@ input , textarea{
 }
 .btnform{
     font-size: 14px;
+}
+footer{
+    font-size: 12px;
 }
 }
