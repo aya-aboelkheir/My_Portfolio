@@ -4,7 +4,7 @@
     --primary:rgb(152, 9, 185) ;
     --light-primary:#8508fa;
     --text-main:#ffffff;
-    --placeholde:#83738e;
+    --placeholde:rgba(142, 113, 169, 0.14);
 }
 * , *::before , *::after{
     box-sizing: border-box;
@@ -27,7 +27,7 @@ body{
     background-color: var(--bg-color);
     color: var(--text-main);
     font-family: "Work Sans", sans-serif;
-    font-size: 10px;
+    font-size: 16px;
     position: relative;
 }
 .container{
@@ -43,11 +43,10 @@ body{
     top: 0;
     z-index: 1;
 }
-h1{
+h1 {
     color: var(--primary);
     padding-top: 5px;
     flex-grow: 1;
-    font-size: 1rem; 
     font-weight: 500;
     letter-spacing: 7px;
 }
@@ -59,7 +58,6 @@ h1{
 
 .nav-item{
     padding: 10px;
-    font-size: 0.5rem;
     font-weight: 300;
     
 }
@@ -81,9 +79,10 @@ h1{
 }
 
 .img img{
- width: 160px;
- height: 155px;
- margin: auto 70px auto 100px;
+ width: 320px;
+ height: 320px;
+ background-size:cover;
+ margin: auto 100px;
 opacity: 0.7;
  border-radius: 50%;
 box-shadow: 1px 1px 2px 4px var(--primary) ;
@@ -96,27 +95,28 @@ white-space: pre-line;
     padding-right: 10%;
 }
 .role{
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 .role span{
-    font-size: 1.1rem;
+    font-size: 2rem;
     color: var(--primary);
     text-shadow: 1px 1px 10px var(--light-primary);
 }
 .name{
-    font-size: 3rem;
+    padding:10px 0;
+    font-size: 5rem;
     letter-spacing: 0;
     font-weight: 800;
     text-shadow: 0 0 1px var(--light-primary)
 }
 .cta{
     background-color: var(--light-primary);
-    padding: 7px;
-    margin-top: 20px;
+    padding: 10px;
+    margin-top: 40px;
     border: 1px solid var(--light-primary);
-    border-radius: 5px;
-    font-size: 10px;
+    border-radius: 10px;
+    font-size: 1.2rem;
 }
 .icons_box{
     margin-left: 20px;
@@ -124,17 +124,17 @@ white-space: pre-line;
 }
 .icon {
     display: inline-flex;
-    padding: 10px;
-    width: 15px;
-    height: 15px;
+    padding: 13px 10px 10px 10px;
+    width: 30px;
+    height: 30px;
     margin: 0 3px;
-    font-size: 12px;
+    font-size: 1.2rem;
     background-color: #a7a7a7;
     border-radius: 50%;
     align-items: center;
     justify-content: center;
     border: 1.5px solid var(--light-primary);
-    transition: 0.1s;
+    transition: 0.2s;
 }
 .icon i{
     color:var(--primary);
@@ -151,27 +151,28 @@ white-space: pre-line;
     flex-direction: column;
     align-items: center;
 }
-.about h2{
+h2 {
     text-align: center;
+    font-size: 2rem;
     font-weight:700;
 }
 hr{
-    width: 25px;
+    width: 50px;
     border:1px solid var(--primary);
+    margin-bottom: 20px;
 }
 .about p{
     width: fit-content;
     margin: 20px auto;
-    padding: 20px 50px;
+    padding: 20px 40px;
     background-color: var(--bg-color2);
     white-space: pre-line;
-    line-height: 1.4;
     color:#b8b6b6;
-    border-radius: 5px;
+    border-radius: 10px;
     
 }
 .about span{
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: var(--text-main);
 }
 .about a:hover{
@@ -179,7 +180,6 @@ hr{
 }
 .services{
     margin: 0 auto;
-    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -188,32 +188,40 @@ hr{
     margin: 20px auto ;
     display: grid;
     grid-template-columns: auto auto auto;
-    column-gap: 30px;
-    row-gap: 30px;
+    column-gap: 40px;
+    row-gap: 40px;
 }
 .service-card{
     background-color: var(--bg-color2);
-    height: 240px;
+    height: 350px;
+    padding: 10px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 15px;
-    justify-content: center;
+    padding: 0 ;
+    row-gap: 5px;
+    column-gap: 5px;
     border-radius: 5px;
     transition: 0.2s;
 }
 .service-card i{
-    font-size: 2rem;
+    font-size: 3.2rem;
+    margin: 40px;
+    margin-bottom: 30px;
     color: var(--primary);
     height: 50px;
 }
 .service-card h3{
     padding-bottom: 3px;
+    font-size: 1.2rem;
 }
 .service-card p{
     height: 70px;
+    padding: 5px;
     text-align: center;
-    overflow: hidden;
+    /* overflow: hidden; */
+    font-size: 15px;
+    font-weight: 400;
 }
 .service-card:hover{
     scale: 1.05;
@@ -226,12 +234,14 @@ hr{
 }
 .form{
     background-color: var(--bg-color2);
-    padding: 20px;
+    padding: 10px;
     margin: 20px auto;
+    margin-bottom: 30px;
     display: flex;
     flex-direction: column;
     row-gap: 10px;
     border: 10px solid var(--bg-color2);
+    border-radius: 10px;
 }
 .inputnameemail {
     margin: auto;
@@ -240,25 +250,26 @@ hr{
     column-gap: 10px;
 }
 .inputnameemail input{
-    width: 250px;
+    width: 400px;
 }
 .inputsubject input , .inputmessage textarea{
-    width: 510px;
+    width: 810px;
 }
 .inputmessage textarea{
-    height: 100px;
+    height: 200px;
+    font-size: 1rem;
 }
 input, textarea{
-    padding: 7px;
+    padding: 18px;
     color: var(--text-main);
     background-color: var(--placeholde);
     border: 1px solid var(--placeholde);
-    border-radius: 5px;
+    border-radius: 10px;
 }
 ::placeholder{
     color: var(--text-main);
     font-weight: 100;
-    font-size: 10px;
+    /* font-size: 10px; */
 }
 .btnform{
     margin-top: 10px;
@@ -266,7 +277,7 @@ input, textarea{
 }
 .btnform button{
     padding: 10px;
-    font-size: 12px;
+    font-size: 1.1rem;
     font-weight: 600;
     color: var(--text-main);
     background-color: var(--primary);
@@ -284,7 +295,7 @@ footer{
     position: absolute;
     left: 0;
 }
-@media (max-width:600px){
+@media (max-width:800px){
     body{
         line-height: 1.4;
     }
@@ -302,9 +313,12 @@ text-align: center;
  .description{
     padding: 0  20% 0 20%;
  }
+ .name{
+    font-size: 3.5rem;
+ }
 .img img{
- width: 140px;
- height: 145px;
+ width: 300px;
+ height: 300px;
  margin: auto;
 }
 .about p{
@@ -313,53 +327,85 @@ text-align: center;
 .cards{
     grid-template-columns: auto auto;
 }
-
+input , textarea{
+    padding: 10px;
+}
 .inputnameemail input{
-    width: 200px;
+    width: 240px;
 }
 .inputsubject input , .inputmessage textarea{
-    width: 410px;
+    width: 490px;
 }
 } 
 @media (max-width:500px){
+    .first{
+        padding-top: 5px;
+    }
 .first h1{
       padding-top: 6px;
-      font-size: 12px;
+      font-size: 1.4rem;
     font-weight: 500;
-    letter-spacing: 2px;
+    /* letter-spacing: 2px; */
 }
 .nav-item {
  padding-right: 0;
     
 }
 .img img{
- width: 100px;
- height: 100px;
+ margin: 50px auto 30px auto;
 }
 .name{
-    font-size: 2rem;
+    font-size: 3rem;
+}
+.role{
+    font-size: 1.3rem;
 }
 .description{
-    padding: 0 10%;
+    padding: 0 10px;
+}
+.icons_box{
+    margin: 0;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 8px;
 }
 .about p{
     width: 80vw;
-    padding: 10px;
+    padding: 10px 20px 20px 20px;
 }
 .cards{
     grid-template-columns: auto;
 }
+.service-card{
+    height: 280px;
+    padding: 0 20px;
+}
 .form{
-    padding: 5px;
+    padding: 3px;
     margin: 20px 0;
 }
 input , textarea{
     padding: 5px;
 }
+.inputnameemail{
+    gap: 5px;
+}
 .inputnameemail input{
-    width: 130px;
+    width: 185px;
 }
 .inputsubject input , .inputmessage textarea{
-    width: 270px;
+    width: 375px;
+}
+input , textarea{
+    padding: 7px 10px;
+    
+}
+:-moz-placeholder{
+    font-size: 10px;
+}
+.btnform{
+    font-size: 14px;
 }
 }
