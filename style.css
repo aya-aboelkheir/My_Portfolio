@@ -415,10 +415,11 @@ input , textarea{
     gap: 7px;
 }
 .inputnameemail input{
-    width: 180px;
+    max-width: 180px;
+    
 }
 .inputsubject input , .inputmessage textarea{
-    width: 370px;
+    max-width: 370px;
 }
 input , textarea{
     padding: 7px 10px;
