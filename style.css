@@ -347,7 +347,7 @@ input , textarea{
 
     }
 .first h1{
-      padding-top: 5px;
+      /* padding-top: 5px; */
       font-size: 1.7rem;
     /* letter-spacing: 2px; */
 }
@@ -434,6 +434,6 @@ input , textarea{
     font-size: 14px;
 }
 footer{
-    font-size: 12px;
+    font-size: 10px;
 }
 }
