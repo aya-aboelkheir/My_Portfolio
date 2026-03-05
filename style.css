@@ -29,6 +29,11 @@ body{
     font-family: "Work Sans", sans-serif;
     font-size: 16px;
     position: relative;
+    
+}
+html{
+    scroll-behavior: smooth;
+
 }
 .container{
     width: 90%;
@@ -57,7 +62,7 @@ h1 {
 }
 
 .nav-item{
-    padding: 10px;
+    padding: 14px 10px 10px 10px;
     font-weight: 300;
     
 }
@@ -99,16 +104,29 @@ white-space: pre-line;
     font-weight: 700;
 }
 .role span{
+    letter-spacing: 1px;
     font-size: 2rem;
     color: var(--primary);
     text-shadow: 1px 1px 10px var(--light-primary);
 }
-.name{
-    padding:10px 0;
+.name {
+    padding:10px 0 20px 0;
     font-size: 5rem;
     letter-spacing: 0;
     font-weight: 800;
-    text-shadow: 0 0 1px var(--light-primary)
+    text-shadow: 0 0 1px var(--light-primary);
+    line-height:1.2;
+    
+}
+.name span{
+    display:block;
+    margin-bottom:0;
+    font-size:1rem;
+    color:var(--text-main);
+    font-weight:400;
+    padding-left:15px;
+    letter-spacing: 2px;
+
 }
 .cta{
     background-color: var(--light-primary);
