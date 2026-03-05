@@ -107,7 +107,7 @@ white-space: pre-line;
     letter-spacing: 1px;
     font-size: 2rem;
     color: var(--primary);
-    text-shadow: 1px 1px 10px var(--light-primary);
+    text-shadow: 0px 3px 5px var(--primary);
 }
 .name {
     padding:10px 0 20px 0;
@@ -384,11 +384,11 @@ input , textarea{
     line-height: 1.3;
 }
 .role{
- font-size: 1.3rem;
+ font-size: 1.2rem;
  line-height: 0;
 }
 .role span{
- font-size: 1.5rem;
+ font-size: 1.4rem;
 }
 .description{
     margin: 0 auto;
